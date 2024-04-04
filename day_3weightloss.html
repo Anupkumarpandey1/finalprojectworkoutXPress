@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Diet Plan (Veg)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #003049;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #f2f2f2;
+            overflow: hidden;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            border-top: 2px solid #003049;
+            border-bottom: 2px solid #003049;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: #003049;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s;
+            border-right: 2px solid #003049;
+        }
+
+        .navbar a:last-child {
+            border-right: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .diet-plan {
+            margin: 20px;
+        }
+
+        .meal {
+            margin-bottom: 20px;
+            border: 2px solid #003049;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .meal h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            background-color: #f2f2f2;
+            padding: 5px;
+        }
+
+        .food-item {
+            margin-bottom: 10px;
+        }
+
+        .total-calories {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .total-macros {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .macro {
+            text-align: center;
+        }
+
+        .left-item {
+            float: left;
+            clear: left;
+            width: 50%;
+        }
+
+        .right-item {
+            float: right;
+            width: 50%;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Adjust position of "Apple with skin, Raw" */
+        .food-item:last-child {
+            float: right;
+        }
+        .hero{
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        
+        /* Set a specific width for the food item images */
+        .food-item img {
+            width: 350px; /* Adjust as needed */
+            height: auto;
+        }
+        /* Your existing CSS styles here */
+
+        /* New CSS styles for the sub nav bar */
+        .sub-navbar {
+            background-color: #f2f2f2;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #003049;
+            padding: 10px 0;
+        }
+
+        .sub-navbar a {
+            display: inline-block;
+            color: #003049;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            border-right: 2px solid #003049;
+        }
+
+        .sub-navbar a:last-child {
+            border-right: none;
+        }
+
+        .sub-navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Diet Plan - Weight Loss</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="weight_loss_veg.html">Weight Loss</a>
+        <a href="muscle_gain.html">Muscle Gain</a>
+    </div>
+    <!-- New sub nav bar -->
+    <div class="sub-navbar">
+        <a href="weight_loss_veg.html">Day 1</a>
+        <a href="day_2weightloss.html">Day 2</a>
+        <a href="day_3weightloss.html">Day 3</a>
+    </div>
+
+    <div class="total-calories">
+        <h2>Total Calories: 1697.6 kcal</h2>
+    </div>
+
+    <div class="total-macros">
+        <div class="macro">
+            <h3>Protein:</h3>
+            <p>95.4g</p>
+        </div>
+        <div class="macro">
+            <h3>Carbs:</h3>
+            <p>142.7g</p>
+        </div>
+        <div class="macro">
+            <h3>Fats:</h3>
+            <p>68.1g</p>
+        </div>
+    </div>
+
+    <div class="diet-plan">
+        <div class="meal">
+            <h3>Breakfast</h3>
+            <div class="clearfix">
+                <div class="food-item left-item">
+                    <p class="hero">Almonds</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKm8SVI3GAwtsusHP_4nBXA785RynwZSt-D8JUi_pm6w&s" alt="Placeholder">
+                    <p>Quantity: 30g | Cal: 160.0 kcal</p>
+                    <p>P: 6.0g• C: 6.0g • F: 14.0g</p>
+                </div>
+                <div class="food-item right-item"> <!-- Shifted to right-item class -->
+                    <p class="hero">Greek yogurt with berries</p>
+                    <img src="https://as2.ftcdn.net/v2/jpg/06/21/94/83/1000_F_621948344_UV99UsEDIlt7b0VrkNuSxST08EuOyOHH.jpg" alt="Placeholder">
+                    <p>Quantity: 150g | Cal: 90.0 kcal</p>
+                    <p>P: 15.0g • C: 7.0g • F: 0.0g</p>
+                </div>
+            </div>
+        </div>
+        <div class="meal">
+            <h3>Lunch</h3>
+            <div class="clearfix">
+                <div class="food-item left-item">
+                    <p class="hero">Salmon fillet</p>
+                    <img src="https://img.freepik.com/premium-photo/fresh-salmon-fillet-with-basil-white-background_120872-2192.jpg" alt="Placeholder">
+                    <p>Quantity: 150g | Cal: 240.0 kcal</p>
+                    <p>P: 34.0g • C: 0.0g • F: 11.0g</p>
+                </div>
+                <div class="food-item right-item">
+                    <p class="hero">Sweet potato</p>
+                    <img src="https://as2.ftcdn.net/v2/jpg/00/77/91/57/1000_F_77915763_OwgLqpklo2cHjHRX6gc5OOiTzrzqujR8.jpg" alt="Placeholder">
+                    <p>Quantity: 150g | Cal: 120.0 kcal</p>
+                    <p>P: 2.0g • C: 26.0g • F: 0.2g</p>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="food-item left-item">
+                    <p class="hero">Spinach</p>
+                    <img src="https://t4.ftcdn.net/jpg/01/08/76/99/360_F_108769942_rrv3QfSPmQIKCBVmVB1wUMgF8BRl3C0l.jpg" alt="Placeholder">
+                    <p>Quantity: 100g | Cal: 23 kcal</p>
+                    <p>P: 2.9g • C: 3.6g • F: 0.4g</p>
+                </div>
+                <div class="food-item right-item">
+                    <p class="hero">Mixed frozen vegetables</p>
+                    <img src="https://st2.depositphotos.com/10614052/49850/i/450/depositphotos_498502998-stock-photo-bowl-mix-frozen-vegetables-white.jpg" alt="Placeholder">
+                    
+                    <p>Quantity: 100g | Cal: 60.0 kcal</p>
+                    <p>P: 2.9g • C: 13.1g • F: 0.1g</p>
+                </div>
+            </div>
+        </div>
+        <div class="meal">
+            <h3>Snacks</h3>
+            <div class="food-item right-item">
+                <p class="hero">Whole grain bread</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSERg2fhu56Lm5D86H9gCjr3QQi1_wqNyFIhWaYvJEFLA&s" alt="Placeholder">
+                <p>Quantity: 2 slice | Cal: 150.0 kcal</p>
+                <p>P: 6.0g • C: 26.0g • F: 2.0g</p>
+            </div>
+            <div class="clearfix">
+                <div class="food-item left-item">
+                    <p class="hero">Coffee black no sugar</p>
+                    <img src="https://img.freepik.com/premium-photo/white-cup-black-coffee-isolated-white-background_252965-15.jpg" alt="Placeholder">
+                    <p>Quantity: 100g | Cal: 1.0 kcal</p>
+                    <p>P: 0.19 • C: 0.0g • F: 0.0g</p>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="food-item left-item">
+                    <p class="hero">Avocado</p>
+                    <img src="https://img.freepik.com/premium-photo/fresh-avocado-isolated-white-background_34435-4135.jpg" alt="Placeholder">
+                    <p>Quantity: 50g | Cal: 80 kcal</p>
+                    <p>P: 1.0g • C: 4.0g • F: 7.0g</p>
+                </div>
+                <div class="food-item right-item">
+                    <p class="hero">Greek yogurt</p>
+                    <img src="https://img.freepik.com/premium-photo/bowl-greek-yogurt-white-background_1000714-115.jpg" alt="Placeholder">
+                    <p>Quantity: 100g | Cal: 60.0 kcal</p>
+                    <p>P: 10.0g • C: 4.0g • F: 0.0g</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="meal">
+            <h3>dinner</h3>
+            <div class="clearfix">
+                <div class="food-item left-item">
+                    <p class="hero">Grilled chicken breast</p>
+                    <img src="https://as2.ftcdn.net/v2/jpg/01/04/30/09/1000_F_104300989_T6IISORtAw1bGyjcwyFgMe8bhkLVFL7Z.jpg" alt="Placeholder">
+                    <p>Quantity: 125g | Cal: 165.0 kcal</p>
+                    <p>P: 31.0g • C: 0.0g • F: 3.6g</p>
+                </div>
+                <div class="food-item right-item">
+                    <p class="hero">Quinoa</p>
+                    <img src="https://media.istockphoto.com/id/1168462285/photo/wooden-bowl-of-quinoa-seeds-isolated-on-white-background-top-view.jpg?s=612x612&w=0&k=20&c=q-bvCOMjNFbwWa7U0lfL9PCboUKArX1qMw2U6kHWYxw=" alt="Placeholder">
+                    <p>Quantity: 50g | Cal: 185.0 kcal</p>
+                    <p>P: 4.0g • C: 32.0g • F: 2.0g</p>
+                </div>
+            </div>
+            <div class="food-item right-item">
+                <p class="hero">Extra virgin olive oil</p>
+                <img src="https://t3.ftcdn.net/jpg/02/86/55/56/360_F_286555692_WV4hwihNzuxWR1bRGYETQ6I3RJNeFz9c.jpg" alt="Placeholder">
+                <p>Quantity: 5g | Cal: 45.0 kcal</p>
+                <p>P: 0.0g • C: 0.0g • F: 5.0g</p>
+            </div>
+            <div class="clearfix">
+                <div class="food-item left-item">
+                    <p class="hero">Broccoli</p>
+                    <img src="https://t4.ftcdn.net/jpg/01/38/59/65/360_F_138596527_vo9I8cKl20phDuIauIEfeQ2mWGw60Wjm.jpg" alt="Placeholder">
+                    <p>Quantity: 100g | Cal: 34 kcal</p>
+                    <p>P: 2.8g • C: 6.0g • F: 0.4g</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

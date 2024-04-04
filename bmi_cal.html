@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>BMI Calculator</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://img.freepik.com/premium-photo/fitness-equipment-workout_522560-19444.jpg');
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .calculator {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 32px;
+      text-align: center;
+      width: 320px;
+    }
+
+    .calculator h2 {
+      color: #4c4e56;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+
+    .calculator input {
+      background-color: #f6f8fa;
+      border: 1px solid #c2c2c2;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      padding: 12px;
+      width: 90%;
+      font-size: 18px;
+    }
+
+    .calculator button {
+      background-color: #4caf50;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 12px 20px;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .calculator button:hover {
+      background-color: #449747;
+    }
+
+    #result {
+      margin-top: 32px;
+      font-size: 24px;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    .health-goal {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .health-goal-muscle-gain {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="calculator">
+    <h2>BMI Calculator</h2>
+    <form id="bmi-form">
+      <input type="number" id="height" placeholder="Your height (cm)">
+      <input type="number" id="weight" placeholder="Your weight (kg)">
+      <input type="number" id="age" placeholder="Your age">
+      <button type="submit" id="calculate-bmi">Calculate BMI</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('bmi-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const height = document.getElementById('height').value;
+      const weight = document.getElementById('weight').value;
+      const age = document.getElementById('age').value;
+      const bmi = (weight / Math.pow(height / 100, 2)).toFixed(1);
+      let result = '';
+      let p = '';
+
+      if (bmi < 18.5) {
+        result = 'You are underweight.';
+        p = '<span class="health-goal health-goal-muscle-gain">FITNESS GOAL: Muscle Gain</span>';
+        document.getElementById('result').style.color = 'green';
+      } else if (bmi >= 18.5 && bmi <= 24.9) {
+        result = 'You are a healthy weight';
+        p = '<span class="health-goal health-goal-muscle-gain">FITNESS GOAL: Muscle Gain</span>';
+        document.getElementById('result').style.color = 'green';
+      } else if (bmi > 24.9) {
+        result = 'You are overweight';
+        p = '<span class="health-goal health-goal-muscle-gain">FITNESS GOAL: Weight Loss</span>';
+        document.getElementById('result').style.color = 'green';
+      }
+
+      document.getElementById('result').innerHTML = `Your BMI is ${bmi}, ${result}<br><br>${p}`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Fitness Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .team-member {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position relative for absolute positioning */
+  }
+
+  .team-member h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .team-member p {
+    margin-bottom: 5px;
+    color: #666;
+  }
+
+  .team-member .contact-info {
+    margin-top: 10px;
+  }
+
+  .team-member .contact-info a {
+    display: block;
+    text-decoration: none;
+    color: #5c3d82;
+    transition: color 0.3s;
+  }
+
+  .team-member .contact-info a:hover {
+    color: #3c2552;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+  }
+
+  /* Background Image Placeholder for .team-member */
+  .team-member:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://media.istockphoto.com/id/1351198689/video/4k-video-footage-of-a-exercising-bikes-in-a-row-ready-to-be-used.jpg?s=640x640&k=20&c=jTYhL0_BPz6KFGKshhUCl4adYOCx2_S45Enh9GYw3Eg=");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Adjust the opacity as needed */
+    z-index: -1; /* Place behind other content */
+    border-radius: 8px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .team-member img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Contact Us</h1>
+
+  <div class="team-member">
+    <img src="https://i.pinimg.com/736x/d6/33/64/d633644d8627b5b26067aaf52c7b6f7e.jpg" alt="John Doe">
+    <div>
+      <h2>Anup kumar pandey</h2>
+      <p>Role: Personal Trainer</p>
+      <p>Contact: daredevil9654@example.com</p>
+      <p>Phone: 9315359757</p>
+      <div class="contact-info">
+        <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="team-member">
+    <img src="https://static.vecteezy.com/system/resources/previews/015/579/664/original/girl-in-traditional-costume-cartoon-character-logo-illustration-vector.jpg" alt="Mike Johnson">
+    <div>
+      <h2>khusboo</h2>
+      <p>Role: Leader</p>
+      <p>Contact: khushb0518@gmail.com</p>
+      <p>Phone: 87723564567</p>
+      <div class="contact-info">
+        <a href="https://www.facebook.com/mikejohnson" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-member">
+    <img src="https://img.freepik.com/premium-photo/2d-illustration-beautiful-business-woman-girl-female-cartoon-flat-style-simple-logo-generative-ai_159242-27740.jpg" alt="Jane Smith">
+    <div>
+      <h2>Arpita Kukreja</h2>
+      <p>Role: Nutritionist</p>
+      <p>Contact: Arpitakukreja18.com</p>
+      <p>Phone: 9876543210</p>
+      <div class="contact-info">
+        <a href="https://twitter.com/janesmith" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-member">
+    <img src="https://i.pinimg.com/originals/3b/92/35/3b9235b902cab472f8a8137debb5a27e.jpg" alt="Mike Johnson">
+    <div>
+      <h2>Devansh bhardwaj</h2>
+      <p>Role: Fitness Instructor</p>
+      <p>Contact: devanshbhardwaj701.com</p>
+      <p>Phone: 94123564567</p>
+      <div class="contact-info">
+        <a href="https://www.facebook.com/mikejohnson" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

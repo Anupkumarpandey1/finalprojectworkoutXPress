@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Xpress</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url("https://www.gymmarine.com/wp-content/uploads/2017/09/IMG_C3C381298781-1-1372x800.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Display the nav links as a row */
+        }
+
+        .nav-link {
+            margin: 0 10px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .nav-link a {
+            color: #211951;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .nav-link:hover a {
+            color: #f54242;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 2px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            background-color: #f54242;
+        }
+
+        .main-content {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 10px;
+        }
+
+        .text-container h1 {
+            margin-bottom: 35px;
+            color: #000000;
+        }
+
+        .text-container p {
+            margin-bottom: 25px;
+            color: #211951;
+        }
+
+        .cta-button {
+            background-color: #f54242;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            font-size: medium;
+        }
+
+        .cta-button:hover {
+            background-color: #d42f2f;
+        }
+
+        .footer {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid gray;
+            background-color: rgba(255, 255, 255, 0.704);
+            backdrop-filter: blur(5px);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-social-media {
+            display: flex;
+            margin-left: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        a{
+            color: #3f3093;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bolder;
+  font-size-adjust: inherit;
+        }
+
+        .footer-brand img {
+            width: 130px;
+            height: auto;
+        }
+       
+
+        .footer-right {
+            padding-right: 10px;
+            font-size: medium;
+        }
+       
+
+
+        .footer-social-media li {
+            margin: 0 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav-links {
+                flex-direction: column; /* Change to vertical layout on mobile */
+                align-items: flex-start; /* Align items to the start */
+            }
+
+            .nav-link {
+                margin: 10px 0; /* Add margin between vertical links */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="footer-brand"><img src="workout_express__1_-removebg-preview.png" alt="Fit Flex Logo"></div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="personalized_workout.html">PERSONALIZED WORKOUT</a></li>
+                <li class="nav-link"><a href="weight_loss_veg.html">DIET</li>
+                <li class="nav-link"><a href="fromscratch.html">TRAINING PLANS</a></li>
+                <li class="nav-link" ><a href="suggestion.html">SUGGESTIONS</a></li>
+                <li class="nav-link"><a href="contact_us.html">CONTACT US</a></li>
+                <li class="nav-link"><a href="bmi_cal.html">BMI CALCULATOR</a></li>
+            </ul>
+        </header>
+        <BR></BR>
+        <BR></BR>
+        <BR></BR>
+        <div class="main-content">
+            <div class="image-container">
+            </div>
+            <div class="text-container" style="padding: 60px 0;">
+                <h1>YOU CAN NOW FLEX WITH US</h1>
+                <p>
+                   YOU CAN START THE TEST
+                    <br>
+                                          AT <span style="color: #f54242;">START TEST</span>
+                </p>
+                <button class="cta-button" ><a href="personalized_workout.html" style="color: white; text-decoration: none;">START TEST</a></button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-left">
+                <div class="footer-brand" style="padding-left: 10px;"><t>[ Workout Xpress ]</t> </div>
+                <ul class="footer-social-media"> 
+                    <li class="icon-linkedin">LinkedIn</li>
+                    <li class="icon-facebook">Facebook</li>
+                    <li class="icon-instagram">Instagram</li>
+                    <li class="icon-twitter">Twitter</li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div style="font-style: italic; padding-right: 20px;">OWN YOUR PERSONAL TRAINER</div>
+                <div style="font-size: large;">Workout Xpress</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
